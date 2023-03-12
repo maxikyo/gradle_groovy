@@ -2,7 +2,6 @@ package com.holovanovmax.spring_groovy_gradle.controller
 
 import com.holovanovmax.spring_groovy_gradle.dao.UsersRepository
 import com.holovanovmax.spring_groovy_gradle.entity.Users
-import org.apache.catalina.connector.Response
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
