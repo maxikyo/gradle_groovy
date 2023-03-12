@@ -2,6 +2,7 @@ package com.holovanovmax.spring_groovy_gradle.controller
 
 import com.holovanovmax.spring_groovy_gradle.dao.UsersRepository
 import com.holovanovmax.spring_groovy_gradle.entity.Users
+import org.apache.catalina.connector.Response
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("api/")
     class Controller {
 
     private final UsersRepository usersRepository;
@@ -27,8 +28,8 @@ import org.springframework.web.bind.annotation.RestController
     }
 
     @PostMapping("/users")
-    ResponseEntity<Users> createUser(@RequestBody Users users){
-        return ResponseEntity.ok(this.userRepository.save(user));
+    ResponseEntity<Users> createUsers(@RequestBody Users users) {
+        return ResponseEntity.ok(this.usersRepository.save(users))
     }
 
 }
