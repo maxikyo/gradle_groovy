@@ -4,12 +4,13 @@
     <deployment>
       <file path="$PROJECT_DIR$">
         <settings>
-          <option name="CONTEXT_PATH" value="/" />
+          <option name="CONTEXT_PATH" value="/api" />
         </settings>
       </file>
     </deployment>
     <server-settings>
       <option name="BASE_DIRECTORY_NAME" value="4040323b-5adb-4829-9ac8-c2f1e1ba8fed" />
+      <option name="HTTP_PORT" value="3030" />
     </server-settings>
     <predefined_log_file enabled="true" id="Tomcat" />
     <predefined_log_file enabled="true" id="Tomcat Catalina" />
