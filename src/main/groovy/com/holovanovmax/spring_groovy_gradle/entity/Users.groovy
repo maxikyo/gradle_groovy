@@ -15,16 +15,5 @@ class Users {
 
     private def name
 
-    Users() {
 
-    }
-
-    @Override
-    String toString() {
-        return "Users{" +
-                "id=" + id +
-                ", email=" + email +
-                ", name=" + name +
-                '}';
-    }
 }
