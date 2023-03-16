@@ -3,10 +3,8 @@ package com.holovanovmax.spring_groovy_gradle.entity
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
-@Document ("users")
+@Document("users")
 class Users {
-
-
 
     @Id
     private def id
